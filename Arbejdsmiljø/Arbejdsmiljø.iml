@@ -12,5 +12,6 @@
     <orderEntry type="jdk" jdkName="12" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="library" level="project" />
+    <orderEntry type="library" name="Maven: org.processing:core:3.3.6" level="project" />
   </component>
 </module>
