@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Arbejdsmiljø" target="1.5" />
+      <module name="Arbejdsmiljø" target="12" />
     </bytecodeTargetLevel>
   </component>
 </project>
