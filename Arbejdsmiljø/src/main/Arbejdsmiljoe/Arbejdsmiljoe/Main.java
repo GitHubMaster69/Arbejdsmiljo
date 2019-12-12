@@ -24,7 +24,7 @@ public void mouseClicked(){
     try {
         ResultSet questionSQL = db.getQuestion("sikkerhed", "1");
         System.out.println(questionSQL.getString(1));
-        db.storeQuestion(2, "sikkerhed", "why are you gay?", "i am not gay", "you are gay", "what the fuck", "no you are fuck");
+        //db.storeQuestion(2, "sikkerhed", "why are you gay?", "i am not gay", "you are gay", "what the fuck", "no you are fuck");
     } catch (SQLException | ClassNotFoundException e) {
         e.printStackTrace();
     }
