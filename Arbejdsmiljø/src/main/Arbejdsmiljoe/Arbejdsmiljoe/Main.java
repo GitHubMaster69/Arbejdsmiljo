@@ -10,8 +10,8 @@ public class Main extends PApplet {
 public static MainDisplay Displays = new MainDisplay();
 
     public void settings(){
-<<<<<<< HEAD
-        size(800,800);
+        //size(800,800);
+        fullScreen();
         SQLiteTest db = new SQLiteTest();
         try {
             db.getQuestion("sikkerhed", "1");
@@ -19,10 +19,6 @@ public static MainDisplay Displays = new MainDisplay();
             e.printStackTrace();
         }
     }
-    //@Override
-public void draw(){
-    p.background(100);
-}
 public void mouseClicked(){
     SQLiteTest db = new SQLiteTest();
     try {
@@ -33,19 +29,12 @@ public void mouseClicked(){
         e.printStackTrace();
     }
 }
-=======
-        fullScreen();
-    }
 
+    //@Override
     public void draw()  {
     p.background(100);
     Displays.Display();
 
 
     }
-    public void mouseClicked()  {
-
-    }
-
->>>>>>> master
 }

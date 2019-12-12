@@ -1,7 +1,9 @@
 package Arbejdsmiljoe;
+import processing.core.PApplet;
 
-<<<<<<< HEAD
-public class Questions {
+public class Questions extends PApplet {
+    protected final PApplet p = this;
+
     int number;
     String questionText;
     String correct1;
@@ -17,18 +19,3 @@ public class Questions {
          wrong3 = w3;
 }
 }
-=======
-import processing.core.PApplet;
-
-public class Questions extends PApplet {
-    protected final PApplet p = this;
-
-
-
-
-
-
-
-
-}
->>>>>>> master
