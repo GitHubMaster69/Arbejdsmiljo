@@ -3,8 +3,10 @@
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_12" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$" />
-    <orderEntry type="jdk" jdkName="12" jdkType="JavaSDK" />
+    <orderEntry type="jdk" jdkName="13.0.1" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="library" level="project" />
+    <orderEntry type="library" name="org.processing:core:3.0b7" level="project" />
+    <orderEntry type="library" name="org.xerial:sqlite-jdbc:3.27.2" level="project" />
+    <orderEntry type="library" name="sqlite-jdbc-3.8.11.2" level="project" />
   </component>
 </module>
