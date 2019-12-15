@@ -10,10 +10,9 @@ public class MainDisplay extends PApplet {
     public static Display seeQuiz = new Display();
 
 
-    public int page;
+    public int page = 0;
 
-    public void Display(){
-    }
+
 
     public void displaySelector() {
      switch (page) {
@@ -31,6 +30,9 @@ public class MainDisplay extends PApplet {
              break;
          }
     }
+
+
+
 }
 
 

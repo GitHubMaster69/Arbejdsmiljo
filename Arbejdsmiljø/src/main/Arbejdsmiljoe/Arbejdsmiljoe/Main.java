@@ -11,7 +11,7 @@ public class Main extends PApplet {
 
 
     }
-    public static MainDisplay Displays = new MainDisplay();
+     public static MainDisplay displaySelector = new MainDisplay();
    // public static MyGUIForm loginscreen = new MyGUIForm(); ikke slet, er igang <3
 
     public void settings(){
@@ -42,10 +42,13 @@ public void mouseClicked(){
     //@Override
     public void draw()  {
     p.background(100);
-    Displays.Display();
+    displaySelector.displaySelector();
+
 
 
 
 
     }
+
+
 }
