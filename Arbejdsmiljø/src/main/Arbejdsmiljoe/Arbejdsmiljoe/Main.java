@@ -1,17 +1,23 @@
 package Arbejdsmiljoe;
 import processing.core.PApplet;
+import processing.core.PImage;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+
+
 
 public class Main extends PApplet {
     protected final PApplet p = this;
     public static void main(String[] args){
         Main.main("Arbejdsmiljoe.Main");
-
-
     }
+
+    MainDisplay pages = new MainDisplay();
+    int thePage = pages.getPage();
+
      public static MainDisplay displaySelector = new MainDisplay();
+    public static Display eatAss = new Display();
    // public static MyGUIForm loginscreen = new MyGUIForm(); ikke slet, er igang <3
 
     public void settings(){
@@ -26,8 +32,13 @@ public class Main extends PApplet {
         } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
         }
-
     }
+
+    public void setup(){
+        println("ok boomer");
+        eatAss.eatAss();
+    }
+
 public void mouseClicked(){
     SQLiteTest db = new SQLiteTest();
     try {
@@ -41,13 +52,7 @@ public void mouseClicked(){
 
     //@Override
     public void draw()  {
-    p.background(100);
-    displaySelector.displaySelector();
-
-
-
-
-
+        displaySelector.displaySelector();
     }
 
 

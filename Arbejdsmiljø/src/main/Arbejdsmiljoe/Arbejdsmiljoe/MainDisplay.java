@@ -9,10 +9,11 @@ public class MainDisplay extends PApplet {
     public static Display quizList = new Display();
     public static Display seeQuiz = new Display();
 
+    private int page = 0;
 
-    public int page = 0;
-
-
+    public int getPage() {
+        return this.page;
+    }
 
     public void displaySelector() {
      switch (page) {
