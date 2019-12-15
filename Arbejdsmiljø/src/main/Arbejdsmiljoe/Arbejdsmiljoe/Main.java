@@ -22,10 +22,10 @@ public class Main extends PApplet {
 
     public void settings(){
 
-        size(displayWidth/4,displayHeight/4);
+        //size(displayWidth/4,displayHeight/4);
 
-        //size(800,800);
-        fullScreen();
+        size(1600,900);
+        //fullScreen();
         SQLiteTest db = new SQLiteTest();
         try {
             db.getQuestion("sikkerhed", "1");
@@ -36,7 +36,8 @@ public class Main extends PApplet {
 
     public void setup(){
         println("ok boomer");
-        eatAss.eatAss();
+        PImage quizImage = loadImage("C:\\Users\\Simoon\\Documents\\GitHub\\Arbejdsmiljo\\Arbejdsmiljø\\src\\main\\Arbejdsmiljoe\\Arbejdsmiljoe\\data\\quiz.png");
+        eatAss.eatAss(quizImage, p);
     }
 
 public void mouseClicked(){
@@ -52,7 +53,7 @@ public void mouseClicked(){
 
     //@Override
     public void draw()  {
-        displaySelector.displaySelector();
+        displaySelector.displaySelector(p);
     }
 
 

@@ -3,7 +3,7 @@ package Arbejdsmiljoe;
 import processing.core.PApplet;
 
 public class MainDisplay extends PApplet {
-    protected final PApplet p = this;
+    //protected final PApplet p = this;
     public static Display loginScreen = new Display();
     public static Display takeQuiz = new Display();
     public static Display quizList = new Display();
@@ -15,19 +15,19 @@ public class MainDisplay extends PApplet {
         return this.page;
     }
 
-    public void displaySelector() {
+    public void displaySelector(PApplet p) {
      switch (page) {
          case 0:
-             loginScreen.loginScreen();
+             loginScreen.loginScreen(p);
              break;
          case 1:
-             quizList.quizList();
+             quizList.quizList(p);
              break;
          case 2:
-             takeQuiz.takeQuiz();
+             takeQuiz.takeQuiz(p);
              break;
          case 3:
-             seeQuiz.seeQuiz();
+             seeQuiz.seeQuiz(p);
              break;
          }
     }
