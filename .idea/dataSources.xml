@@ -7,5 +7,11 @@
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/QuestionDatabase</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="teknikquestions@192.168.1.20" uuid="ded53c37-70d7-4128-a16f-cda48be8b1cb">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://192.168.1.20:3306/teknikquestions</jdbc-url>
+    </data-source>
   </component>
 </project>

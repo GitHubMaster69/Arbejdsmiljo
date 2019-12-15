@@ -8,5 +8,6 @@
     <orderEntry type="library" name="org.processing:core:3.0b7" level="project" />
     <orderEntry type="library" name="org.xerial:sqlite-jdbc:3.27.2" level="project" />
     <orderEntry type="library" name="sqlite-jdbc-3.8.11.2" level="project" />
+    <orderEntry type="library" name="mysql:mysql-connector-java:8.0.17" level="project" />
   </component>
 </module>
