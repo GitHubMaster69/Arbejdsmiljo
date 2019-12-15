@@ -6,6 +6,7 @@ import java.sql.SQLException;
 
 public class Main extends PApplet {
     protected final PApplet p = this;
+    public int backgroundColor = 100;
     public static void main(String[] args){ Main.main("Arbejdsmiljoe.Main"); }
     public void settings(){
         size(800,800);
@@ -19,7 +20,7 @@ public class Main extends PApplet {
     }
     //@Override
     public void draw(){
-        p.background(100);
+        p.background(backgroundColor);
     }
 public void mouseClicked(){
     SQLiteTest db = new SQLiteTest();
