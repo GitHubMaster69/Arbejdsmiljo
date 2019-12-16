@@ -16,6 +16,8 @@ import javax.swing.JPanel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
+import static processing.core.PApplet.println;
+
 public class MyGUIForm extends JFrame implements ActionListener {
 
     JPanel panel;
@@ -23,6 +25,8 @@ public class MyGUIForm extends JFrame implements ActionListener {
     JTextField userName_text;
     JPasswordField password_text;
     JButton submit, cancel;
+    public static Main update = new Main();
+
 
     MyGUIForm() {
 
@@ -74,6 +78,11 @@ public class MyGUIForm extends JFrame implements ActionListener {
         if (userName.trim().equals("admin") && password.trim().equals("admin")) {
             message.setText(" Hello " + userName
                     + "");
+            MainDisplay page = new MainDisplay();
+            page.page += 1;
+            update.update();
+
+
         } else {
             message.setText(" Invalid user.. ");
         }

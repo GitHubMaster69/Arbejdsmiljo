@@ -11,7 +11,7 @@ public class Display extends MainDisplay {
     Button Question4;
 
     public void loginScreen(PApplet p) {
-
+        new MyGUIForm();
     }
 
     public void quizList(PApplet p) {

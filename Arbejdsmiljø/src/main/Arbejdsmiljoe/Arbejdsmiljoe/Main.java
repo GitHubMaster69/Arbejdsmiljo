@@ -38,11 +38,18 @@ public void mouseClicked(){
         e.printStackTrace();
     }
 }
+public void setup(){
+        update();
+}
+
+
+public void update(){
+        displaySelector.displaySelector(p);
+    }
 
     //@Override
     public void draw()  {
     p.background(100);
-    displaySelector.displaySelector(p);
     mousePressed();
     mouseMoved();
     }
