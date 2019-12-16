@@ -4,7 +4,7 @@ import processing.core.PApplet;
 
 
 public class Button extends PApplet {
-    static final int W = 60, H = 40;
+    final int W = width*8, H = height;
 
     final String label;
     final short x, y, xW, yH;
