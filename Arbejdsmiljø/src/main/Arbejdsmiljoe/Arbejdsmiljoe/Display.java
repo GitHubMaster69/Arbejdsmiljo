@@ -8,12 +8,12 @@ import static Arbejdsmiljoe.Button.H;
 import static Arbejdsmiljoe.Button.W;
 
 public class Display extends MainDisplay {
-    protected final PApplet p = this;
 
     Button Question1;
 
-    public void loginScreen() {
+    public void loginScreen(PApplet p) {
         Question1 = new Button("Question 1", width - W, height - H);
+        Question1.display(p);
         println("boomer");
     }
 

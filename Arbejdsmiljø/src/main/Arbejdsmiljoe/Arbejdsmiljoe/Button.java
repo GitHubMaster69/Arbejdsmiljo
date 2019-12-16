@@ -20,10 +20,10 @@ public class Button extends PApplet {
         yH = (short) (yy + H);
     }
 
-    void display() {
-        rect(x, y, W, H);
+    void display(PApplet p) {
+        p.rect(x, y, W, H);
 
-        text(label, x + W / 2, y + H / 2);
+        p.text(label, x + W / 2, y + H / 2);
     }
 
     boolean isInside() {

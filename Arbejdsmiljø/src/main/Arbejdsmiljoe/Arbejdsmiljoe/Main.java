@@ -42,7 +42,7 @@ public void mouseClicked(){
     //@Override
     public void draw()  {
     p.background(100);
-    displaySelector.displaySelector();
+    displaySelector.displaySelector(p);
     mousePressed();
     mouseMoved();
     }

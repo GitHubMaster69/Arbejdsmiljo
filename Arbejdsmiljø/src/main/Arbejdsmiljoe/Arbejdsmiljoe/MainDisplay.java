@@ -14,10 +14,10 @@ public class MainDisplay extends PApplet {
 
 
 
-    public void displaySelector() {
+    public void displaySelector(PApplet p) {
      switch (page) {
          case 0:
-             loginScreen.loginScreen();
+             loginScreen.loginScreen(p);
              break;
          case 1:
              quizList.quizList();
