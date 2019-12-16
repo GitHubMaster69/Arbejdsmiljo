@@ -14,5 +14,6 @@
     <orderEntry type="library" name="org.processing:core:3.0b7" level="project" />
     <orderEntry type="library" name="org.xerial:sqlite-jdbc:3.27.2" level="project" />
     <orderEntry type="library" name="Maven: org.processing:core:3.3.6" level="project" />
+    <orderEntry type="library" name="mysql:mysql-connector-java:8.0.18" level="project" />
   </component>
 </module>

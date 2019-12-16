@@ -11,7 +11,7 @@ public class MainDisplay extends PApplet {
     public static Display seeQuiz = new Display();
 
 
-    public int page = 0;
+    public int page = 2;
 
 
 
@@ -21,13 +21,13 @@ public class MainDisplay extends PApplet {
              loginScreen.loginScreen(p, quizImage);
              break;
          case 1:
-             quizList.quizList();
+             quizList.quizList(p);
              break;
          case 2:
-             takeQuiz.takeQuiz();
+             takeQuiz.takeQuiz(p);
              break;
          case 3:
-             seeQuiz.seeQuiz();
+             seeQuiz.seeQuiz(p);
              break;
          }
     }
