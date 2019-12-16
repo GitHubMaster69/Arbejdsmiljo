@@ -78,9 +78,11 @@ public class MyGUIForm extends JFrame implements ActionListener {
         if (userName.trim().equals("admin") && password.trim().equals("admin")) {
             message.setText(" Hello " + userName
                     + "");
-            MainDisplay page = new MainDisplay();
-            page.page += 1;
-            update.update();
+            //MainDisplay page = new MainDisplay();
+            //page.page += 1;
+            MainDisplay.page += 1;
+            System.out.printf("page is now at" + MainDisplay.page);
+            //Main.update();
 
 
         } else {

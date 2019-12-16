@@ -28,13 +28,19 @@ public class SQLiteTest {
         }
 
 
-    public ResultSet getQuestion(String categoryChosen, String number) throws SQLException, ClassNotFoundException {
+    public String[] getQuestion(String categoryChosen, String number) throws SQLException, ClassNotFoundException {
         if (con == null) {
             getConnection();
         }
         Statement state = con.createStatement();
-        ResultSet res = state.executeQuery("SELECT text, c1, w1, w2, w3 FROM Question WHERE number = 1 AND category = 'sikkerhed'");
-        return res;
+        ResultSet res = state.executeQuery("SELECT text, c1, w1, w2, w3 FROM Question WHERE number = " + number + " AND category = " + categoryChosen + "");
+        String[] info = {"", "", "","", ""};
+        info[0] = res.getString(0);
+        info[1] = res.getString(1);
+        info[2] = res.getString(2);
+        info[3] = res.getString(3);
+        info[4] = res.getString(4);
+        return info;
     }
 
 

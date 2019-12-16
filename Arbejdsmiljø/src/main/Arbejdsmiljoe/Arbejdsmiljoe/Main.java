@@ -21,35 +21,37 @@ public class Main extends PApplet {
         //size(800,800);
         fullScreen();
         SQLiteTest db = new SQLiteTest();
-        try {
-            db.getQuestion("sikkerhed", "1");
+        /*try {
+            //db.getQuestion("sikkerhed", "1");
         } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
-        }
+        }*/
 
     }
 public void mouseClicked(){
     SQLiteTest db = new SQLiteTest();
+    displaySelector.displaySelector(p);
+
     try {
-        ResultSet questionSQL = db.getQuestion("sikkerhed", "1");
-        System.out.println(questionSQL.getString(1));
+        //String[] questionSQL = db.getQuestion("sikkerhed", "1");
+        //System.out.println(questionSQL[1]);
         //db.storeQuestion(2, "sikkerhed", "why are you gay?", "i am not gay", "you are gay", "what the fuck", "no you are fuck");
-    } catch (SQLException | ClassNotFoundException e) {
-        e.printStackTrace();
-    }
-}
-public void setup(){
-        update();
-}
+    //} catch (SQLException | ClassNotFoundException e) {
+    //    e.printStackTrace();
+    //}
+//}
+//public void setup(){
+        //update();
+//}
 
 
-public void update(){
-        displaySelector.displaySelector(p);
+public static void update(){
+        //displaySelector.displaySelector(p);
     }
 
     //@Override
     public void draw()  {
-    p.background(100);
+    //p.background(100);
     mousePressed();
     mouseMoved();
     }
