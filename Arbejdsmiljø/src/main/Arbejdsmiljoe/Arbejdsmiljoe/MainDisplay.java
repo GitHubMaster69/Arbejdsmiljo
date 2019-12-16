@@ -1,6 +1,7 @@
 package Arbejdsmiljoe;
 
 import processing.core.PApplet;
+import processing.core.PImage;
 
 public class MainDisplay extends PApplet {
     protected final PApplet p = this;
@@ -14,10 +15,10 @@ public class MainDisplay extends PApplet {
 
 
 
-    public void displaySelector(PApplet p) {
+    public void displaySelector(PApplet p, PImage quizImage) {
      switch (page) {
          case 0:
-             loginScreen.loginScreen(p);
+             loginScreen.loginScreen(p, quizImage);
              break;
          case 1:
              quizList.quizList();
