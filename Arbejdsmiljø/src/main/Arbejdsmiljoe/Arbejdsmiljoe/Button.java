@@ -22,8 +22,9 @@ public class Button extends PApplet {
 
     void display(PApplet p) {
         p.rect(x, y, W, H);
-
+        p.fill(0);
         p.text(label, x + W / 2, y + H / 2);
+        p.fill(255);
     }
 
     boolean isInside() {

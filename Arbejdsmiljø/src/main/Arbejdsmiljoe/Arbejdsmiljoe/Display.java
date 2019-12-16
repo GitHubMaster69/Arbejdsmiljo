@@ -12,7 +12,7 @@ public class Display extends MainDisplay {
     Button Question4;
 
     public void loginScreen(PApplet p, PImage quizImage) {
-        Question1 = new Button("Question 1", width - W, height - H);
+        Question1 = new Button("Question 1", 500, 500);
         Question1.display(p);
         //p.background(quizImage);
         //println("boomer");

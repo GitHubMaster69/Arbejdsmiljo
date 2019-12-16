@@ -24,8 +24,8 @@ public class Main extends PApplet {
 
         size(displayWidth/4,displayHeight/4);
 
-        size(1600,900);
-        //fullScreen();
+        //size(1600,900);
+        fullScreen();
         SQLiteTest db = new SQLiteTest();
         try {
             db.getQuestion("sikkerhed", "1");
