@@ -23,7 +23,7 @@ public class Button extends PApplet {
     void display() {
         rect(x, y, W, H);
 
-        text(label, x + W/2, y + H/2);
+        text(label, x + W / 2, y + H / 2);
     }
 
     boolean isInside() {

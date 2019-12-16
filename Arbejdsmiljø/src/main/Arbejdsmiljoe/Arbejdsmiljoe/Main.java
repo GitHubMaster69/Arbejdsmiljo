@@ -43,11 +43,8 @@ public void mouseClicked(){
     public void draw()  {
     p.background(100);
     displaySelector.displaySelector();
-
-
-
-
-
+    mousePressed();
+    mouseMoved();
     }
 
 
