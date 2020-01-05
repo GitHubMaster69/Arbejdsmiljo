@@ -22,15 +22,19 @@ public class MainDisplay extends PApplet {
      switch (page) {
          case 0:
              loginScreen.loginScreen(p);
+             System.out.printf("case 0");
              break;
          case 1:
              quizList.quizList(p);
+             System.out.printf("case 1");
              break;
          case 2:
              takeQuiz.takeQuiz(p);
+             System.out.printf("case 2");
              break;
          case 3:
              seeQuiz.seeQuiz(p);
+             System.out.printf("case 3");
              break;
          }
     }
