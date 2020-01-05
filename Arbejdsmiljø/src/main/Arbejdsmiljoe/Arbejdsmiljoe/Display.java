@@ -38,9 +38,16 @@ public class Display extends MainDisplay {
 
     public void mouseMoved() {
         Question1.isInside();
+        Question2.isInside();
+        Question3.isInside();
+        Question4.isInside();
     }
 
     public void mousePressed() {
-        if (Question1.isHovering) --page;
+        if (Question1.isHovering);
+        if (Question2.isHovering);
+        if (Question3.isHovering);
+        if (Question4.isHovering);
+
     }
 }
