@@ -8,6 +8,7 @@ public class MainDisplay extends PApplet {
     public static Display takeQuiz = new Display();
     public static Display quizList = new Display();
     public static Display seeQuiz = new Display();
+    public static boolean updateState = true;
 
 
     public static int page = 0;
@@ -18,7 +19,7 @@ public class MainDisplay extends PApplet {
 
 
 
-    public void displaySelector(PApplet p) {
+    public static void displaySelector(PApplet p) {
      switch (page) {
          case 0:
              loginScreen.loginScreen(p);

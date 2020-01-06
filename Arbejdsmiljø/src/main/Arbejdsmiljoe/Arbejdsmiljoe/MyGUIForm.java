@@ -1,5 +1,7 @@
 package Arbejdsmiljoe;
 
+import processing.core.PApplet;
+
 import javax.swing.*;
 
 import java.awt.BorderLayout;
@@ -71,7 +73,7 @@ public class MyGUIForm extends JFrame implements ActionListener {
         new MyGUIForm();
     }
 
-    @Override
+    //@Override
     public void actionPerformed(ActionEvent ae) {
         String userName = userName_text.getText();
         String password = password_text.getText();
@@ -82,7 +84,7 @@ public class MyGUIForm extends JFrame implements ActionListener {
             //page.page += 1;
             MainDisplay.page += 1;
             System.out.printf("page is now at" + MainDisplay.page);
-            //Main.update();
+            MainDisplay.updateState = true;
 
 
         } else {

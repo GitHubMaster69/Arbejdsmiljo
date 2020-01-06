@@ -5,18 +5,21 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class Main extends PApplet {
+    //private static PApplet p;
     protected final PApplet p = this;
-    public static void main(String[] args){
+
+    public static void main(String[] args) {
         Main.main("Arbejdsmiljoe.Main");
 
 
     }
-     public static MainDisplay displaySelector = new MainDisplay();
-   // public static MyGUIForm loginscreen = new MyGUIForm(); ikke slet, er igang <3
 
-    public void settings(){
+    public static MainDisplay displaySelector = new MainDisplay();
+    // public static MyGUIForm loginscreen = new MyGUIForm(); ikke slet, er igang <3
 
-        size(displayWidth/4,displayHeight/4);
+    public void settings() {
+
+        size(displayWidth / 4, displayHeight / 4);
 
         //size(800,800);
         fullScreen();
@@ -28,33 +31,37 @@ public class Main extends PApplet {
         }*/
 
     }
-public void mouseClicked(){
-    SQLiteTest db = new SQLiteTest();
-    displaySelector.displaySelector(p);
 
-    try {
-        //String[] questionSQL = db.getQuestion("sikkerhed", "1");
-        //System.out.println(questionSQL[1]);
-        //db.storeQuestion(2, "sikkerhed", "why are you gay?", "i am not gay", "you are gay", "what the fuck", "no you are fuck");
-    //} catch (SQLException | ClassNotFoundException e) {
-    //    e.printStackTrace();
-    //}
-//}
-//public void setup(){
-        //update();
-//}
-
-
-public static void update(){
-        //displaySelector.displaySelector(p);
+    public void mouseClicked() {
+        SQLiteTest db = new SQLiteTest();
+        displaySelector.displaySelector(p);
     }
-
-    //@Override
-    public void draw()  {
-    //p.background(100);
-    mousePressed();
-    mouseMoved();
-    }
-
-
+        //try {
+            //String[] questionSQL = db.getQuestion("sikkerhed", "1");
+            //System.out.println(questionSQL[1]);
+            //db.storeQuestion(2, "sikkerhed", "why are you gay?", "i am not gay", "you are gay", "what the fuck", "no you are fuck");
+            //} catch (SQLException | ClassNotFoundException e) {
+            //    e.printStackTrace();
+            //}
+//}
+public void setup(){
+            update();
 }
+
+
+            public void update() {
+        if(MainDisplay.updateState)
+                MainDisplay.displaySelector(p);
+        MainDisplay.updateState = false;
+            }
+
+            //@Override
+            public void draw () {
+                p.rect(100,100,100,100);
+                //mousePressed();
+                //mouseMoved();
+            }
+
+
+        }
+

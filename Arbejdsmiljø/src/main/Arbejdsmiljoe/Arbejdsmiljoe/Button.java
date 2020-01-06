@@ -5,7 +5,7 @@ import processing.core.PApplet;
 
 public class Button extends PApplet {
     final int W = width*8, H = height;
-
+    private PApplet pa;
     final String label;
     final short x, y, xW, yH;
     boolean isHovering;
@@ -21,9 +21,12 @@ public class Button extends PApplet {
     }
 
     void display(PApplet p) {
-        p.rect(x, y, W, H);
-
-        p.text(label, x + W / 2, y + H / 2);
+        pa = p;
+        //pa.background(255);
+        pa.rect(x, y, W, H);
+        pa.fill(0);
+        pa.text(label, x + W / 2, y + H / 2);
+        pa.fill(255);
     }
 
     boolean isInside() {
