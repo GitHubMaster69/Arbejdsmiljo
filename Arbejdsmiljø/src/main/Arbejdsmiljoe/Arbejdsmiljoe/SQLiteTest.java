@@ -32,8 +32,8 @@ public class SQLiteTest {
         if (con == null) {
             getConnection();
         }
-        Statement state = con.createStatement();
-        ResultSet res = state.executeQuery("SELECT text, c1, w1, w2, w3 FROM Question WHERE number = " + number + " AND category = " + categoryChosen + "");
+        //Statement state = con.createStatement();
+        ResultSet res = con.createStatement().executeQuery("SELECT text, c1, w1, w2, w3 FROM Question WHERE number = " + number + "");
         String[] info = {"", "", "","", ""};
         info[0] = res.getString(0);
         info[1] = res.getString(1);
